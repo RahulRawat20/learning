@@ -21,11 +21,24 @@
         padding: 0px;
         margin: 0px;
       }
+      .container-fluid {
+        background-color: #b1d0f8;
+      }
     </style>
   </head>
 
   <body>
-    <div class="container-fluid"></div>
+    <div
+      class="container-fluid min-vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="p-5 bg-white rounded-4 shadow text-center">
+        <h2 class="mb-4 text-primary">Welcome!</h2>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="login.html" class="btn btn-outline-primary px-4">Login</a>
+          <a href="register.html" class="btn btn-primary px-4">Register</a>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script

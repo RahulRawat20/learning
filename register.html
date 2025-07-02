@@ -17,12 +17,12 @@
       crossorigin="anonymous"
     />
     <style>
-      .register-wrapper {
+      .register {
         min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #e3f2fd;
+        background-color: #b1d0f8;
       }
 
       .register-box {
@@ -42,8 +42,11 @@
   </head>
 
   <body>
-    <div class="container-fluid register-wrapper">
+    <div class="container-fluid register">
       <div class="register-box">
+        <p class="text-end">
+          <a href="login_registration_form.html">Back</a>
+        </p>
         <h2>Register</h2>
         <hr />
         <form action="register.php" method="post" enctype="multipart/form-data">
@@ -117,8 +120,9 @@
 
           <button type="submit" class="btn btn-primary w-100">Register</button>
 
-          <div class="text-center mt-3">
-            <a href="login.html"> Login</a>
+          <div class="register-link text-center mt-2">
+            <a href="login.html">Login</a> /
+            <a href="register.html">Register</a>
           </div>
         </form>
       </div>
