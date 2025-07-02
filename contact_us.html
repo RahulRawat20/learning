@@ -16,17 +16,69 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <style>
+      .contact-us {
+        min-height: 100vh;
+
+        background-color: #b1d0f8;
+      }
+    </style>
   </head>
 
   <body>
-    <div
-      class="container-fluid min-vh-100 d-flex justify-content-center align-items-center"
-    >
-      <div class="p-5 bg-white rounded-4 shadow text-center">
-        <h2 class="mb-4 text-primary">Conatct us!</h2>
-        <div class="d-flex justify-content-center gap-3">
-          <a href="login.html" class="btn btn-outline-primary px-4">Login</a>
-          <a href="register.html" class="btn btn-primary px-4">Register</a>
+    <div class="container-fluid contact-us">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="card shadow-sm mt-5">
+            <div class="card-body">
+              <h3 class="card-title text-center mb-4">Contact Us</h3>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    placeholder="Enter subject"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                    placeholder="Your message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
